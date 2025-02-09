@@ -27,6 +27,6 @@ sudo swapon /swapfile
 sudo echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
 
 
-#Instalar node e npm
-curl -fsSL https://rpm.nodesource.com/setup_21.x | sudo bash -
+# Instalar Node.js 22.x para garantir compatibilidade com npm@11
+curl -fsSL https://rpm.nodesource.com/setup_22.x | sudo bash -
 sudo yum install -y nodejs
